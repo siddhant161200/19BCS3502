@@ -1,0 +1,23 @@
+int b ;
+  int d=3;
+void setup() {
+ pinMode(1,INPUT);
+ pinMode(5,OUTPUT);
+  
+}
+
+void loop() {
+ delay(200); 
+  int a = digitalRead(1);
+ 
+ if(a==HIGH){
+  for(int i=2;i<d;i++)
+  {if(i%2==0){
+     digitalWrite(5,HIGH);
+  }
+  else{digitalWrite(5,LOW);}
+    
+  }
+ }
+d++;
+}
